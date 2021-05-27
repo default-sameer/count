@@ -9,7 +9,7 @@
 
             <p class="text-xl text-center text-gray-600 dark:text-gray-200">Welcome back!</p>
 
-            <a href="#" class="flex items-center justify-center mt-4 text-gray-600 rounded-lg shadow-md dark:bg-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600">
+            <a href="{{url_for('github.github_login')}}" class="flex items-center justify-center mt-4 text-gray-600 rounded-lg shadow-md dark:bg-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600">
                 <div class="px-4 py-3">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="24px" height="24px">
                         <linearGradient id="rL2wppHyxHVbobwndsT6Ca" x1="4" x2="44" y1="23.508" y2="23.508" gradientUnits="userSpaceOnUse">
@@ -35,7 +35,7 @@
             <div class="flex items-center justify-between mt-4">
                 <span class="w-1/5 border-b dark:border-gray-600 lg:w-1/4"></span>
 
-                <a class="text-xs text-center text-gray-500 uppercase dark:text-gray-400">or login with email</a>
+                <p class="text-xs text-center text-gray-500 uppercase dark:text-gray-400">or login with email</p>
 
                 <span class="w-1/5 border-b dark:border-gray-400 lg:w-1/4"></span>
             </div>
@@ -70,7 +70,7 @@
             <div class="flex items-center justify-between mt-4">
                 <span class="w-1/5 border-b dark:border-gray-600 md:w-1/4"></span>
 
-                <a href="{{url_for("register")}}" class="text-xs text-gray-500 uppercase dark:text-gray-400 hover:underline">or sign up</a>
+                <a href="{{url_for('auth.register')}}" class="text-xs text-gray-500 uppercase dark:text-gray-400 hover:underline">or sign up</a>
                 
                 <span class="w-1/5 border-b dark:border-gray-600 md:w-1/4"></span>
             </div>

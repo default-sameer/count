@@ -10,12 +10,12 @@
             {% if current_user.is_authenticated %}
             <button
                 class="px-2 py-2 w-36 mt-16 font-light transition ease-in duration-200 hover:bg-yellow-400 border-2 text-lg border-gray-700 bg-yellow-300 focus:outline-none">
-                <a href='{{url_for("dashboard")}}'>Go back home</a>
+                <a href='{{url_for("user.dashboard")}}'>Go back home</a>
             </button>
             {% else %}
             <button
                 class="px-2 py-2 w-36 mt-16 font-light transition ease-in duration-200 hover:bg-yellow-400 border-2 text-lg border-gray-700 bg-yellow-300 focus:outline-none">
-                <a href='{{url_for("index")}}'>Go back home</a>
+                <a href='{{url_for("public.index")}}'>Go back home</a>
             </button>
             {% endif %}
             
